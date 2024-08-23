@@ -1,88 +1,97 @@
-//
-//  WorkoutView.swift
-//  AdaptiFit
-//
-//  Created by found on 13/08/24.
-//.
-
 import SwiftUI
 
 struct WorkoutView: View {
     var body: some View {
-        NavigationStack{
-            VStack{
+        NavigationStack {
+            VStack {
                 
-                NavigationLink(destination: RecordsView()){
-                    Text("RECORDES")
-                        .fontWeight(.bold)
-                        .padding([.bottom], 20)
-                        .font(.system(size: 23))
-                        .foregroundColor(.white)
-                }
-                NavigationLink(destination: Init()){
+                Spacer()
+                ZStack{
+                    NavigationLink(destination: Initialization()) {
+                        Rectangle()
+                            .frame(width: 375, height: 70)
+                            .foregroundColor(.yellow)
+                            .cornerRadius(3)
+                            .padding()
+                    }
                     Text("INTRODUTÓRIO")
-                        .frame(width: 390, height: 70)
                         .font(.system(size: 25))
                         .fontWeight(.bold)
-                        .foregroundColor(.black)
-
                 }
-                .background(Color.yellow)
-                
-                NavigationLink(destination: Condition()){
+                ZStack{
+                    NavigationLink(destination: Condition()) {
+                        Rectangle()
+                            .frame(width: 375, height: 70)
+                            .foregroundColor(.yellow)
+                            .cornerRadius(3)
+                    }
                     Text("CONDICIONANTE")
-                        .frame(width: 390, height: 70)
                         .font(.system(size: 25))
                         .fontWeight(.bold)
-                        .foregroundColor(.black)
                 }
-                .background(Color.yellow)
-                .padding()
-                
-                NavigationLink(destination: Hypertrophy()){
+                ZStack{
+                    NavigationLink(destination: Grow()) {
+                        Rectangle()
+                            .frame(width: 375, height: 70)
+                            .foregroundColor(.yellow)
+                            .cornerRadius(3)
+                            .padding()
+                    }
                     Text("HIPERTROFIA")
-                        .frame(width: 390, height: 70)
                         .font(.system(size: 25))
                         .fontWeight(.bold)
-                        .foregroundColor(.black)
                 }
-                .background(Color.yellow)
+                ZStack{
+                    NavigationLink(destination: Straight()) {
+                        Rectangle()
+                            .frame(width: 375, height: 70)
+                            .foregroundColor(.yellow)
+                            .cornerRadius(3)
+                    }
+                    Text("FORÇA")
+                        .font(.system(size: 25))
+                        .fontWeight(.bold)
+                }
+                ZStack{
+                    NavigationLink(destination: Restore()) {
+                        Rectangle()
+                            .frame(width: 375, height: 70)
+                            .foregroundColor(.yellow)
+                            .cornerRadius(3)
+                            .padding()
+                    }
+                    Text("RECUPERAÇÃO")
+                        .font(.system(size: 25))
+                        .fontWeight(.bold)
+                }
+                Spacer()
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .navigationTitle("Treinos")
+            .toolbarColorScheme(.dark, for: .navigationBar) // Define o esquema de cores
+            .toolbarBackground(
+                    Color.black, // Define a cor de fundo da barra de navegação
+                    for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar) // Torna o fundo visível
+            .accentColor(.white) // Define a cor do título e dos botões
+
             .background(Color.black)
+            
         }
         
     }
+    
 }
 
 #Preview {
     WorkoutView()
 }
 
-struct Hypertrophy: View {
-    var body: some View{
-        VStack{
+struct Init: View {
+    var body: some View {
+        VStack {
             Text("hello")
         }
-        
     }
 }
 
-struct Condition: View{
-    var body: some View{
-        VStack{
-            Text("hello")
-        }
-        
-    }
-}
-
-struct Init: View{
-    var body: some View{
-        VStack{
-            Text("hello")
-        }
-        
-    }
-}
-
+// Removida a segunda declaração duplicada de ContentView

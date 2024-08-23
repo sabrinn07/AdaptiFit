@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222867872C75051500AE6878 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222867862C75051500AE6878 /* Initialization.swift */; };
+		222867892C7511A300AE6878 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222867882C7511A300AE6878 /* Condition.swift */; };
+		2228678B2C7511D200AE6878 /* Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228678A2C7511D200AE6878 /* Grow.swift */; };
+		2228678D2C7511F300AE6878 /* Straight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228678C2C7511F300AE6878 /* Straight.swift */; };
+		2228678F2C75122100AE6878 /* Restore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228678E2C75122100AE6878 /* Restore.swift */; };
 		228180F12C6BC8B40097A43E /* AdaptiFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228180F02C6BC8B40097A43E /* AdaptiFitApp.swift */; };
 		228180F32C6BC8B40097A43E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228180F22C6BC8B40097A43E /* ContentView.swift */; };
 		228180F52C6BC8B50097A43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 228180F42C6BC8B50097A43E /* Assets.xcassets */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		222867862C75051500AE6878 /* Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
+		222867882C7511A300AE6878 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		2228678A2C7511D200AE6878 /* Grow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grow.swift; sourceTree = "<group>"; };
+		2228678C2C7511F300AE6878 /* Straight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Straight.swift; sourceTree = "<group>"; };
+		2228678E2C75122100AE6878 /* Restore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restore.swift; sourceTree = "<group>"; };
 		228180ED2C6BC8B40097A43E /* AdaptiFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		228180F02C6BC8B40097A43E /* AdaptiFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiFitApp.swift; sourceTree = "<group>"; };
 		228180F22C6BC8B40097A43E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +87,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222867852C7504D700AE6878 /* WorkoutOptionsViews */ = {
+			isa = PBXGroup;
+			children = (
+				222867862C75051500AE6878 /* Initialization.swift */,
+				222867882C7511A300AE6878 /* Condition.swift */,
+				2228678A2C7511D200AE6878 /* Grow.swift */,
+				2228678C2C7511F300AE6878 /* Straight.swift */,
+				2228678E2C75122100AE6878 /* Restore.swift */,
+			);
+			path = WorkoutOptionsViews;
+			sourceTree = "<group>";
+		};
 		228180E42C6BC8B40097A43E = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +122,7 @@
 		228180EF2C6BC8B40097A43E /* AdaptiFit */ = {
 			isa = PBXGroup;
 			children = (
+				222867852C7504D700AE6878 /* WorkoutOptionsViews */,
 				228180F02C6BC8B40097A43E /* AdaptiFitApp.swift */,
 				228180F22C6BC8B40097A43E /* ContentView.swift */,
 				228180F42C6BC8B50097A43E /* Assets.xcassets */,
@@ -268,8 +291,13 @@
 			files = (
 				228180F32C6BC8B40097A43E /* ContentView.swift in Sources */,
 				228180F12C6BC8B40097A43E /* AdaptiFitApp.swift in Sources */,
+				222867892C7511A300AE6878 /* Condition.swift in Sources */,
 				228181212C6FBA5B0097A43E /* RecordsView.swift in Sources */,
+				2228678B2C7511D200AE6878 /* Grow.swift in Sources */,
+				222867872C75051500AE6878 /* Initialization.swift in Sources */,
 				2281811D2C6BCC0F0097A43E /* WorkoutView.swift in Sources */,
+				2228678D2C7511F300AE6878 /* Straight.swift in Sources */,
+				2228678F2C75122100AE6878 /* Restore.swift in Sources */,
 				2281811B2C6BCA450097A43E /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
