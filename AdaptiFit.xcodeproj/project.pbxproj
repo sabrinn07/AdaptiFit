@@ -22,6 +22,8 @@
 		2281811B2C6BCA450097A43E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281811A2C6BCA450097A43E /* MainView.swift */; };
 		2281811D2C6BCC0F0097A43E /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281811C2C6BCC0F0097A43E /* WorkoutView.swift */; };
 		228181212C6FBA5B0097A43E /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228181202C6FBA5B0097A43E /* RecordsView.swift */; };
+		22F694A22C87894F00C9B689 /* WorkouModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F694A12C87894F00C9B689 /* WorkouModel.swift */; };
+		22F694A52C8789B100C9B689 /* FaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F694A42C8789B100C9B689 /* FaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		2281811A2C6BCA450097A43E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2281811C2C6BCC0F0097A43E /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		228181202C6FBA5B0097A43E /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
+		22F694A12C87894F00C9B689 /* WorkouModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkouModel.swift; sourceTree = "<group>"; };
+		22F694A42C8789B100C9B689 /* FaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		222867852C7504D700AE6878 /* WorkoutOptionsViews */ = {
 			isa = PBXGroup;
 			children = (
+				22F694A32C87898E00C9B689 /* FasesModel */,
+				22F694A02C87892C00C9B689 /* WorkoutModels */,
 				222867862C75051500AE6878 /* Initialization.swift */,
 				222867882C7511A300AE6878 /* Condition.swift */,
 				2228678A2C7511D200AE6878 /* Grow.swift */,
@@ -157,6 +163,22 @@
 				2281810D2C6BC8B50097A43E /* AdaptiFitUITestsLaunchTests.swift */,
 			);
 			path = AdaptiFitUITests;
+			sourceTree = "<group>";
+		};
+		22F694A02C87892C00C9B689 /* WorkoutModels */ = {
+			isa = PBXGroup;
+			children = (
+				22F694A12C87894F00C9B689 /* WorkouModel.swift */,
+			);
+			path = WorkoutModels;
+			sourceTree = "<group>";
+		};
+		22F694A32C87898E00C9B689 /* FasesModel */ = {
+			isa = PBXGroup;
+			children = (
+				22F694A42C8789B100C9B689 /* FaseModel.swift */,
+			);
+			path = FasesModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F694A22C87894F00C9B689 /* WorkouModel.swift in Sources */,
 				228180F32C6BC8B40097A43E /* ContentView.swift in Sources */,
 				228180F12C6BC8B40097A43E /* AdaptiFitApp.swift in Sources */,
 				222867892C7511A300AE6878 /* Condition.swift in Sources */,
@@ -298,6 +321,7 @@
 				2281811D2C6BCC0F0097A43E /* WorkoutView.swift in Sources */,
 				2228678D2C7511F300AE6878 /* Straight.swift in Sources */,
 				2228678F2C75122100AE6878 /* Restore.swift in Sources */,
+				22F694A52C8789B100C9B689 /* FaseModel.swift in Sources */,
 				2281811B2C6BCA450097A43E /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
