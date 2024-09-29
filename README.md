@@ -3,9 +3,9 @@
 
 * [Tecnologias](#Tecnologias)
 * [Funcionamento](#Funcionamento)
-* [Imagens do Aplicaditvo](#Imagens)
+* [Imagens do Aplicativo](#Imagens)
+* [Requisitos](#Requisitos)
 * [Instalação](#Instalação)
-* [Uso](#Uso)
 
 ## Tecnologias:
 <div flex-direction="row">
@@ -20,3 +20,29 @@ Este aplicativo iOS oferece uma biblioteca de exercícios adaptados para cadeira
 
 
 ## Imagens 
+<div flex-direction="row">
+  <img height=600 src="https://github.com/sabrinn07/AdaptiFit/blob/main/UI/Captura%20de%20Tela%202024-09-27%20a%CC%80s%2013.57.52.png">  
+  <img height=600 src="https://github.com/sabrinn07/AdaptiFit/blob/main/UI/Captura%20de%20Tela%202024-09-27%20a%CC%80s%2013.58.09.png">
+  <img height=600 src="https://github.com/sabrinn07/AdaptiFit/blob/main/UI/Captura%20de%20Tela%202024-09-27%20a%CC%80s%2014.25.19.png">
+</div>
+
+
+## Requisitos
+- Xcode 
+- Swift 
+
+## Instalação
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    ```
+2. Abra o arquivo `.xcodeproj` ou `.xcworkspace` no Xcode.
+3. Configure o seu Team nas configurações de **Signing & Capabilities**.
+4. Se houver dependências, execute:
+    ```bash
+    pod install  # ou swift package update
+    ```
+5. Selecione um dispositivo ou simulador no Xcode.
+6. Clique no botão **Run (Play)** no canto superior para compilar e rodar o projeto.
+
